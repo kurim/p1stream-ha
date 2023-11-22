@@ -12,6 +12,20 @@ boot: manual
 image: kur1m/p1stream
 init: false
 startup: system
+options:
+  PRINTER_ADDRESS: null
+  PRINTER_ACCESS_CODE: null
+  UI_USERNAME: p1stream
+  UI_PASSWORD: p1stream
+  RTSP_USERNAME: p1stream
+  RTSP_PASSWORD: p1stream
+schema:
+  PRINTER_ADDRESS: str?
+  PRINTER_ACCESS_CODE: password?
+  UI_USERNAME: str?
+  UI_PASSWORD: password?
+  RTSP_USERNAME: str?
+  RTSP_PASSWORD: password?
 ports:
   8554/tcp: 8554
 host_network: true
