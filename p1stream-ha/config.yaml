@@ -13,9 +13,12 @@ startup: system
 ports:
   8554/tcp: 8554
 host_network: true
+hassio_api: false
 ingress: true
 ingress_port: 1984
 panel_icon: mdi:camera
+map:
+  - addon_config:rw
 options:
   PRINTER_ADDRESS: null
   PRINTER_ACCESS_CODE: null
