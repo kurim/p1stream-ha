@@ -11,11 +11,14 @@ image: kur1m/p1stream
 init: false
 startup: system
 ports:
+  1984/tcp: 1984
   8554/tcp: 8554
+ports_description:
+  1984/tcp: Web interface
+  8554/tcp: RSTP
 host_network: true
 hassio_api: false
-ingress: true
-ingress_port: 1984
+ingress: false
 panel_icon: mdi:camera
 map:
   - addon_config:rw
