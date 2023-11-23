@@ -2,7 +2,7 @@ version: 1.0.0
 slug: p1stream
 name: P1Stream
 description: P1 Camerastream
-url: https://github.com/kurim/P1Stream
+url: https://github.com/kurim/p1stream-ha
 arch:
   - aarch64
   - amd64
