@@ -18,7 +18,7 @@ ports_description:
   8554/tcp: RSTP
 host_network: true
 hassio_api: false
-ingress: false
+ingress: true
 panel_icon: mdi:camera
 map:
   - addon_config:rw
