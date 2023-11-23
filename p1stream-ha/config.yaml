@@ -1,4 +1,4 @@
-version: 1.0.3
+version: 1.0.0
 slug: p1stream
 name: P1Stream
 description: P1 Camerastream
@@ -14,11 +14,12 @@ ports:
   1984/tcp: 1984
   8554/tcp: 8554
 ports_description:
-  1984/tcp: Web interface
+  1984/tcp: Web interface (Not required for Ingress)
   8554/tcp: RSTP
 host_network: true
 hassio_api: false
 ingress: true
+ingress_port: 1984
 panel_icon: mdi:camera
 map:
   - addon_config:rw
