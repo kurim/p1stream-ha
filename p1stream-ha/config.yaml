@@ -1,4 +1,4 @@
-version: 1.0.1
+version: 1.0.2
 slug: p1stream
 name: P1Stream
 description: P1 Camerastream
@@ -24,15 +24,17 @@ panel_icon: mdi:camera
 map:
   - addon_config:rw
 options:
-  PRINTER_ADDRESS: null
-  PRINTER_ACCESS_CODE: null
+  printer:
+    PRINTER_ADDRESS: null
+    PRINTER_ACCESS_CODE: null
   UI_USERNAME: p1stream
   UI_PASSWORD: p1stream
   RTSP_USERNAME: p1stream
   RTSP_PASSWORD: p1stream
 schema:
-  PRINTER_ADDRESS: str
-  PRINTER_ACCESS_CODE: password
+  printer:
+    PRINTER_ADDRESS: str
+    PRINTER_ACCESS_CODE: password
   UI_USERNAME: str
   UI_PASSWORD: password
   RTSP_USERNAME: str
