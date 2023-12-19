@@ -11,12 +11,11 @@ image: kur1m/p1stream-ha
 init: false
 startup: system
 ports:
-  1984/tcp: 1984
+  1984/tcp: null
   8554/tcp: 8554
 ports_description:
   1984/tcp: Web interface (Not required for Ingress)
   8554/tcp: RSTP
-host_network: true
 hassio_api: false
 ingress: true
 ingress_port: 1984
